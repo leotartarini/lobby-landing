@@ -70,7 +70,7 @@ header {
   background-color: #00f8c7;
   border: none;
   color: black;
-  margin: 2rem 0 0 0;
+  margin: 2rem 0 1rem 0;
   box-shadow: 0.2px 0.2px 3px rgba(102, 102, 102, 0.712);
   outline: none;
   transition: 0.2s;
@@ -84,6 +84,47 @@ header {
 
 #photo-1 {
   width: 55rem;
+}
+
+/* Features */
+.section--feature--mid {
+  text-align: center;
+  padding: 1.5rem 8% 0 8%;
+}
+
+.p--mid {
+  max-width: 50rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.green {
+  background-color: #aef7ea;
+}
+
+#ticket--img {
+  width: 80vw;
+  min-width: 36rem;
+}
+#slack--img {
+  margin: 3rem 0;
+  width: 50vw;
+  min-width: 25rem;
+}
+#dashboard--img {
+  width: 30rem;
+}
+.dashboard {
+  display: grid;
+  column-gap: 5%;
+  grid-template-columns: 40% 55%;
+  align-items: center;
+  text-align: left;
+}
+
+.dashboard-container {
+  padding: 0 0 0 8vw;
+  margin: 0;
 }
 
 /* Mid-desktop and some tablets */
