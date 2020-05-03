@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+/* header */
+header {
+  padding: 1rem 8% 1rem 8%;
+  background-color: rgba(252, 252, 252, 0.815);
+  box-shadow: 0.2px 0.2px 3px rgba(102, 102, 102, 0.712);
+  display: flex;
+  align-items: center;
+}
+
+#header-logo {
+  width: 10rem;
+}
+
+.login-button {
+  position: absolute;
+  right: 8%;
+  width: 7.5rem;
+  height: 2.3rem;
+  font-size: 14px;
+  border-radius: 25px;
+  border: 1.2px solid #22007f;
+  color: #22007f;
+  background-color: rgba(252, 252, 252, 0.815);
+  font-weight: bold;
+  outline: none;
+}
+
+.login-button:hover {
+  cursor: pointer;
+  color: #1a0457;
+  border: 1.2px solid #1a0457;
+}
+
+/* billboard */
+.billboard {
+  display: grid;
+  column-gap: 5%;
+  grid-template-columns: 40% 55%;
+  align-items: center;
+  text-align: left;
+}
+
+.billboard-container {
+  padding: 0 0 0 8vw;
+  margin: 0;
+}
+
+.green-but {
+  width: 18rem;
+  height: 3rem;
+  font-size: 18px;
+  border-radius: 30px;
+  background-color: #00f8c7;
+  border: none;
+  color: black;
+  margin: 2rem 0 0 0;
+  box-shadow: 0.2px 0.2px 3px rgba(102, 102, 102, 0.712);
+  outline: none;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.green-but:hover {
+  background-color: #aef7ea;
+  cursor: pointer;
+}
+
+#photo-1 {
+  width: 55rem;
+}
+
+/* Mid-desktop and some tablets */
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .green-but {
+    width: 17rem;
+    height: 2.5rem;
+    font-size: 17px;
+  }
+
+  #photo-1 {
+    width: 40rem;
+  }
+}
+
+/* Some tablets and all smartphones */
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  /*header*/
+  #header-logo {
+    width: 7.5rem;
+  }
+
+  .login-button {
+    width: 7.2rem;
+    height: 2rem;
+  }
+
+  /*billboard*/
+  .billboard {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .billboard-container {
+    padding: 1rem 8%;
+  }
+
+  .green-but {
+    width: 18rem;
+    height: 3rem;
+    font-size: 18px;
+  }
+
+  #photo-1 {
+    width: 100vw;
+    min-width: 30rem;
+  }
+}
