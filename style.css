@@ -112,19 +112,40 @@ header {
   min-width: 25rem;
 }
 #dashboard--img {
-  width: 30rem;
+  width: 40rem;
+  margin: 3rem 0;
 }
 .dashboard {
   display: grid;
-  column-gap: 5%;
-  grid-template-columns: 40% 55%;
+  column-gap: 5vmax;
+  grid-template-columns: auto auto;
   align-items: center;
   text-align: left;
 }
 
 .dashboard-container {
-  padding: 0 0 0 8vw;
+  padding: 0 0 0 16vw;
   margin: 0;
+}
+
+.blue-but {
+  width: 18rem;
+  height: 3rem;
+  font-size: 18px;
+  border-radius: 30px;
+  background-color: #22007f;
+  border: none;
+  color: white;
+  margin: 2rem 0 1rem 0;
+  box-shadow: 0.2px 0.2px 3px rgba(102, 102, 102, 0.712);
+  outline: none;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.blue-but:hover {
+  cursor: pointer;
+  background-color: #391896;
 }
 
 /* Mid-desktop and some tablets */
@@ -145,6 +166,12 @@ header {
 
   #photo-1 {
     width: 40rem;
+  }
+
+  /* features */
+  #dashboard--img {
+    width: 50vw;
+    margin: 3rem 0;
   }
 }
 
@@ -188,5 +215,29 @@ header {
   #photo-1 {
     width: 100vw;
     min-width: 30rem;
+  }
+
+  /* features */
+  #slack--img {
+    margin: 3rem 0;
+    width: 70vw;
+    min-width: 10rem;
+  }
+
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+  }
+
+  .dashboard-container {
+    padding: 0 8vw;
+    margin: 0;
+  }
+  #dashboard--img {
+    width: 80vw;
+    margin: 3rem 0;
+    float: right;
   }
 }
