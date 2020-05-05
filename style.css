@@ -89,7 +89,7 @@ header {
 /* Features */
 .section--feature--mid {
   text-align: center;
-  padding: 1.5rem 8% 0 8%;
+  padding: 2rem 8% 0 8%;
 }
 
 .p--mid {
@@ -124,7 +124,7 @@ header {
 }
 
 .dashboard-container {
-  padding: 0 0 0 16vw;
+  padding: 0 2rem 0 16vw;
   margin: 0;
 }
 
@@ -146,6 +146,44 @@ header {
 .blue-but:hover {
   cursor: pointer;
   background-color: #391896;
+}
+
+.fornecedores {
+  display: grid;
+  column-gap: auto;
+  grid-template-columns: auto auto;
+  align-items: center;
+  text-align: right;
+  padding: 0 8% 0 0;
+}
+
+.fornecedores-container {
+  padding: 2rem 0 0 8vw;
+  margin: 0;
+}
+
+#fornecedores--img {
+  width: 40vw;
+  margin: 3rem 0 3rem 8%;
+}
+.community {
+  display: grid;
+  column-gap: 8%;
+  grid-template-columns: auto auto;
+  align-items: center;
+  text-align: left;
+  padding: 0 8% 0 0;
+}
+
+.community-container {
+  padding: 0 0 0 8vw;
+  margin: 0;
+}
+
+#community--img {
+  width: 35vw;
+  min-width: 35rem;
+  margin: 3rem 0 3rem 8%;
 }
 
 /* Mid-desktop and some tablets */
@@ -232,12 +270,46 @@ header {
   }
 
   .dashboard-container {
-    padding: 0 8vw;
+    padding: 2rem 8vw 0 8vw;
     margin: 0;
   }
   #dashboard--img {
     width: 80vw;
     margin: 3rem 0;
     float: right;
+  }
+
+  .fornecedores {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0;
+  }
+
+  .fornecedores-container {
+    padding: 2rem 8% 0 8%;
+    margin: 0;
+  }
+
+  #fornecedores--img {
+    width: 80vw;
+  }
+
+  .community {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .community-container {
+    padding: 0 8vw;
+    margin: 0;
+  }
+
+  #community--img {
+    width: 100vw;
+    max-width: 35rem;
+    margin: 3rem 0 3rem 0;
   }
 }
