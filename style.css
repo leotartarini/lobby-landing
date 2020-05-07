@@ -5,11 +5,11 @@ body {
   overflow-x: hidden;
 }
 
-.h1 {
+h1 {
   font-size: 48px;
   line-height: 1.5em;
 }
-h1 {
+h2 {
   font-size: 40px;
   line-height: 1.5em;
 }
@@ -28,7 +28,7 @@ header {
   align-items: center;
 }
 
-#header-logo {
+.header-logo {
   width: 7rem;
 }
 
@@ -36,7 +36,6 @@ header {
   position: absolute;
   right: 8%;
   width: 8rem;
-  height: 2.2rem;
   font-size: 14px;
   border-radius: 25px;
   border: 1.2px solid #22007f;
@@ -44,6 +43,9 @@ header {
   background-color: rgba(252, 252, 252, 0.815);
   font-weight: bold;
   outline: none;
+  text-align: center;
+  padding: 0.5em 0;
+  text-decoration: none;
 }
 
 .login-button:hover {
@@ -68,7 +70,6 @@ header {
 
 .green-but {
   width: 18rem;
-  height: 3rem;
   font-size: 18px;
   border-radius: 30px;
   background-color: #00f8c7;
@@ -79,6 +80,9 @@ header {
   outline: none;
   transition: 0.2s;
   font-weight: bold;
+  text-align: center;
+  padding: 1em 2rem;
+  text-decoration: none;
 }
 
 .green-but:hover {
@@ -86,7 +90,7 @@ header {
   cursor: pointer;
 }
 
-#photo-1 {
+.photo-1 {
   width: 55rem;
 }
 
@@ -106,16 +110,16 @@ header {
   background-color: #aef7ea;
 }
 
-#ticket--img {
+.ticket--img {
   width: 80vw;
   min-width: 36rem;
 }
-#slack--img {
+.slack--img {
   margin: 3rem 0;
   width: 50vw;
   min-width: 25rem;
 }
-#dashboard--img {
+.dashboard--img {
   width: 40rem;
   margin: 3rem 0;
 }
@@ -134,7 +138,6 @@ header {
 
 .blue-but {
   width: 18rem;
-  height: 3rem;
   font-size: 18px;
   border-radius: 30px;
   background-color: #22007f;
@@ -145,6 +148,9 @@ header {
   outline: none;
   transition: 0.2s;
   font-weight: bold;
+  text-align: center;
+  padding: 1em 1rem;
+  text-decoration: none;
 }
 
 .blue-but:hover {
@@ -166,7 +172,7 @@ header {
   margin: 0;
 }
 
-#fornecedores--img {
+.fornecedores--img {
   width: 40vw;
   margin: 3rem 0 3rem 8%;
 }
@@ -184,7 +190,7 @@ header {
   margin: 0;
 }
 
-#community--img {
+.community--img {
   width: 35vw;
   min-width: 35rem;
   margin: 3rem 0 3rem 8%;
@@ -192,11 +198,11 @@ header {
 
 /* Mid-desktop and some tablets */
 @media screen and (max-width: 1000px) {
-  h1 {
+  h2 {
     font-size: 25px;
   }
 
-  .h1 {
+  h1 {
     font-size: 35px;
   }
 
@@ -210,12 +216,12 @@ header {
     font-size: 17px;
   }
 
-  #photo-1 {
+  .photo-1 {
     width: 40rem;
   }
 
   /* features */
-  #dashboard--img {
+  .dashboard--img {
     width: 50vw;
     margin: 3rem 0;
   }
@@ -223,7 +229,7 @@ header {
 
 /* Some tablets and all smartphones */
 @media screen and (max-width: 800px) {
-  h1 {
+  h2 {
     font-size: 30px;
   }
 
@@ -232,13 +238,12 @@ header {
   }
 
   /*header*/
-  #header-logo {
+  .header-logo {
     width: 7.5rem;
   }
 
   .login-button {
     width: 7.2rem;
-    height: 2rem;
   }
 
   /*billboard*/
@@ -258,13 +263,13 @@ header {
     font-size: 18px;
   }
 
-  #photo-1 {
+  .photo-1 {
     width: 100vw;
     min-width: 30rem;
   }
 
   /* features */
-  #slack--img {
+  .slack--img {
     margin: 3rem 0;
     width: 70vw;
     min-width: 10rem;
@@ -281,7 +286,7 @@ header {
     padding: 2rem 8vw 0 8vw;
     margin: 0;
   }
-  #dashboard--img {
+  .dashboard--img {
     width: 80vw;
     margin: 3rem 0;
     float: right;
@@ -299,7 +304,7 @@ header {
     margin: 0;
   }
 
-  #fornecedores--img {
+  .fornecedores--img {
     width: 80vw;
   }
 
@@ -315,7 +320,7 @@ header {
     margin: 0;
   }
 
-  #community--img {
+  .community--img {
     width: 100vw;
     max-width: 35rem;
     margin: 3rem 0 3rem 0;
