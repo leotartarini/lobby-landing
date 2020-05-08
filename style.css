@@ -19,6 +19,12 @@ p {
   line-height: 1.5em;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
 /* header */
 header {
   padding: 1rem 8% 1rem 8%;
@@ -194,6 +200,33 @@ header {
   width: 35vw;
   min-width: 35rem;
   margin: 3rem 0 3rem 8%;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8vw;
+}
+
+.f-nav__list {
+  width: auto;
+}
+
+.f-nav--footer__list-item {
+  display: inline-block;
+  padding: 1rem 0;
+  margin: 0 0 0 1rem;
+}
+
+.top-but {
+  border: none;
+  background-color: none;
+  font-size: 15px;
+  outline: none;
+}
+.top-but:hover {
+  cursor: pointer;
 }
 
 /* Mid-desktop and some tablets */
