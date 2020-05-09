@@ -21,6 +21,7 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5em;
+  margin: 2rem 0 3rem 0;
 }
 
 a {
@@ -242,14 +243,27 @@ header {
   width: 2rem;
 }
 
-/* Mid-desktop and some tablets */
+/* Mid-desktop */
+@media screen and (max-width: 1300px) {
+
+  h1 {
+    font-size: 37px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+
+/* little-desktop and some tablets */
 @media screen and (max-width: 1000px) {
   h2 {
     font-size: 25px;
   }
 
   h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   p {
@@ -258,8 +272,8 @@ header {
 
   .green-but {
     width: 17rem;
-    height: 2.5rem;
-    font-size: 17px;
+    height: 2rem;
+    font-size: 15px;
   }
 
   .photo-1 {
@@ -300,7 +314,7 @@ header {
   }
 
   .billboard-container {
-    padding: 1rem 8%;
+    padding: 1rem 8vw 3.5rem 8vw;
   }
 
   .green-but {
