@@ -235,7 +235,7 @@ header {
 
 .button--top {
   border: none;
-  background-color: none;
+  background-color: rgba(0, 0, 0, 0);
   font-size: 15px;
   outline: none;
 }
@@ -329,9 +329,12 @@ header {
   }
 
   .button--green {
-    width: 18rem;
-    height: 3rem;
-    font-size: 18px;
+    font-size: 16px;
+    padding: .8em 2.7rem;
+  }
+  .button--blue {
+    font-size: 16px;
+    padding: .8em 2.7rem;
   }
 
   .billboard__photo {
