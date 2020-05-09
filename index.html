@@ -6,31 +6,31 @@
     <title>Lobby - Gerencie seu workplace de forma eficiente</title>
     <link rel="stylesheet" href="/style.css" />
     <script>
-      //Get the button:
+      // Acessa o button
       mybutton = document.getElementById("myBtn");
 
-      // When the user clicks on the button, scroll to the top of the document
+      // Volta ao topo da página
       function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        document.body.scrollTop = 0; // Safari
+        document.documentElement.scrollTop = 0; // Chrome, Firefox etc.
       }
     </script>
   </head>
   <body>
     <header>
-      <img class="header-logo" src="/img/Lobby_Logo.png" alt="Lobby" />
+      <img class="header__logo" src="/img/Lobby_Logo.png" alt="Lobby" />
       <a
         target="_blank"
         rel="noopener"
         href="https://portal.lobby.tech/"
-        class="login-button"
+        class="header__sign-in"
       >
         Login
       </a>
     </header>
     <main>
       <section class="billboard">
-        <div class="billboard-container">
+        <div class="billboard__content">
           <h1>Gerencie as demandas do seu workplace facilmente</h1>
           <p>
             Office managers agora possuem uma única plataforma para gestão do
@@ -41,18 +41,18 @@
             target="_blank"
             rel="noopener"
             href="https://lobby.freshsales.io/web_forms/ea0c2abfad15d76e27a9a7dc907de4f7d27fd2931792c5cc6753d48103ead52c/form.html"
-            class="green-but"
+            class="button--green"
           >
             Agende uma demonstração
           </a>
         </div>
         <img
-          class="photo-1"
+          class="billboard__photo"
           src="/img/Site photo1.jpg"
           alt="Foto de um escritório cheio de pessoas trabalhando."
         />
       </section>
-      <section class="section--feature--mid green">
+      <section class="section__feature--mid green">
         <h2>Acompanhe as solicitações em um único lugar</h2>
         <p class="p--mid">
           Com a plataforma da Lobby, você recebe as demandas internas da sua
@@ -62,7 +62,7 @@
         </p>
         <img class="ticket--img" src="/img/ticket site@3x.png" alt="" />
       </section>
-      <section class="section--feature--mid">
+      <section class="section__feature--mid">
         <h2>Transforme solicitações no Slack em tickets.</h2>
         <p class="p--mid">
           Ao integrar a Lobby no Slack, seus colaboradores poderão abrir e
@@ -73,7 +73,7 @@
         <img class="slack--img" src="/img/Slack integration@3x.png" alt="" />
       </section>
       <section class="dashboard green">
-        <div class="dashboard-container">
+        <div class="dashboard__content">
           <h2>Antecipe as necessidades dos seus colaboradores</h2>
           <p>
             Use os dados de forma inteligente para antecipar necessidades dos
@@ -84,7 +84,7 @@
             target="_blank"
             rel="noopener"
             href="https://lobby.freshsales.io/web_forms/ea0c2abfad15d76e27a9a7dc907de4f7d27fd2931792c5cc6753d48103ead52c/form.html"
-            class="blue-but"
+            class="button--blue"
           >
             Agende uma demonstração
           </a>
@@ -97,7 +97,7 @@
           src="/img/Lobby-Fornecedores@3x.png"
           alt=""
         />
-        <div class="fornecedores-container">
+        <div class="fornecedores__content">
           <h2>Acesse fornecedores indicados da sua região</h2>
           <p>
             Na plataforma da Lobby, fornecedores de confiança são compartilhados
@@ -105,20 +105,20 @@
             legais da sua região, assim todos se beneficiam com os melhores
             preços e serviços.
           </p>
-          <a target="_blank" rel="noopener" href="#" class="blue-but"
+          <a target="_blank" rel="noopener" href="#" class="button--blue"
             >Se inscrever agora</a
           >
         </div>
       </section>
       <section class="community">
-        <div class="community-container">
+        <div class="community__content">
           <h2>Junte-se à comunidade workplace leaders</h2>
           <p>
             Faça parte da principal comunidade de líderes de workplace do
             Brasil. Conecte-se com o que há de melhor na gestão do ambiente de
             trabalho.
           </p>
-          <a target="_blank" rel="noopener" href="#" class="green-but"
+          <a target="_blank" rel="noopener" href="#" class="button--green"
             >Torne-se um membro</a
           >
         </div>
@@ -127,7 +127,7 @@
     </main>
     <footer class="green">
       <div class="footer__container">
-        <button onclick="topFunction()" id="myBtn" class="top-but">
+        <button onclick="topFunction()" id="myBtn" class="button--top">
           <img
             src="/icons/up-arrow.svg"
             alt="seta apontando para cima"
@@ -137,10 +137,10 @@
           <a>Voltar ao topo</a>
         </button>
         <ul class="f-nav__list">
-          <li class="f-nav--footer__list-item">
+          <li class="f-nav__list-item">
             <a target="_blank" rel="noopener" href="">Termos de uso</a>
           </li>
-          <li class="f-nav--footer__list-item">
+          <li class="f-nav__list-item">
             <a target="_blank" rel="noopener" href=""
               >Política de privacidade</a
             >
@@ -151,27 +151,27 @@
       <div class="footer__container">
         <h4>São Paulo © Lobby 2020</h4>
         <ul class="f-nav__list">
-          <li class="f-nav--footer__list-item">
+          <li class="f-nav__list-item">
             <a href="">
               <img class="icon" src="/icons/Facebook.png" alt="Face" />
             </a>
           </li>
-          <li class="f-nav--footer__list-item">
+          <li class="f-nav__list-item">
             <a href="">
               <img class="icon" src="/icons/Email.png" alt="Face" />
             </a>
           </li>
-          <li class="f-nav--footer__list-item">
+          <li class="f-nav__list-item">
             <a href="">
               <img class="icon" src="/icons/WhatsApp.png" alt="Face" />
             </a>
           </li>
-          <li class="f-nav--footer__list-item">
+          <li class="f-nav__list-item">
             <a href="">
               <img class="icon" src="/icons/LinkedIn.png" alt="Face" />
             </a>
           </li>
-          <li class="f-nav--footer__list-item">
+          <li class="f-nav__list-item">
             <a href="">
               <img class="icon" src="/icons/Instagram.png" alt="Face" />
             </a>

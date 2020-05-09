@@ -8,6 +8,7 @@ body {
 h1 {
   font-size: 48px;
   line-height: 1.5em;
+  margin-bottom: 2rem;
 }
 h2 {
   font-size: 40px;
@@ -21,7 +22,7 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5em;
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 0 3.5rem 0;
 }
 
 a {
@@ -35,6 +36,11 @@ hr {
   border 0.5px solid black;
 }
 
+.green {
+  background-color: #aef7ea;
+}
+
+
 /* header */
 header {
   padding: 1rem 8% 1rem 8%;
@@ -44,11 +50,11 @@ header {
   align-items: center;
 }
 
-.header-logo {
+.header__logo {
   width: 7rem;
 }
 
-.login-button {
+.header__sign-in {
   position: absolute;
   right: 8%;
   width: 8rem;
@@ -64,7 +70,7 @@ header {
   text-decoration: none;
 }
 
-.login-button:hover {
+.header__sign-in:hover {
   cursor: pointer;
   color: #1a0457;
   border: 1.2px solid #1a0457;
@@ -79,39 +85,40 @@ header {
   text-align: left;
 }
 
-.billboard-container {
+.billboard__content {
   padding: 0 0 0 8vw;
   margin: 0;
 }
 
-.green-but {
+.billboard__photo {
+  width: 55rem;
+}
+
+.button--green {
   width: 18rem;
   font-size: 18px;
   border-radius: 30px;
   background-color: #00f8c7;
   border: none;
   color: black;
-  margin: 2rem 0 1rem 0;
   box-shadow: 0.2px 0.2px 3px rgba(102, 102, 102, 0.712);
   outline: none;
   transition: 0.2s;
   font-weight: bold;
   text-align: center;
-  padding: 1em 2rem;
+  padding: .8em 3rem;
   text-decoration: none;
 }
 
-.green-but:hover {
+.button--green:hover {
   background-color: #aef7ea;
   cursor: pointer;
 }
 
-.photo-1 {
-  width: 55rem;
-}
+
 
 /* Features */
-.section--feature--mid {
+.section__feature--mid {
   text-align: center;
   padding: 2rem 8% 0 8%;
 }
@@ -122,9 +129,7 @@ header {
   margin: 0 auto;
 }
 
-.green {
-  background-color: #aef7ea;
-}
+
 
 .ticket--img {
   width: 80vw;
@@ -147,13 +152,12 @@ header {
   text-align: left;
 }
 
-.dashboard-container {
-  padding: 0 2rem 0 16vw;
+.dashboard__content {
+  padding: 0 2rem 0 8vw;
   margin: 0;
 }
 
-.blue-but {
-  width: 18rem;
+.button--blue {
   font-size: 18px;
   border-radius: 30px;
   background-color: #22007f;
@@ -165,11 +169,11 @@ header {
   transition: 0.2s;
   font-weight: bold;
   text-align: center;
-  padding: 1em 1rem;
+  padding: .8em 3rem;
   text-decoration: none;
 }
 
-.blue-but:hover {
+.button--blue:hover {
   cursor: pointer;
   background-color: #391896;
 }
@@ -177,13 +181,13 @@ header {
 .fornecedores {
   display: grid;
   column-gap: auto;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   align-items: center;
   text-align: right;
   padding: 0 8% 0 0;
 }
 
-.fornecedores-container {
+.fornecedores__content {
   padding: 2rem 0 0 8vw;
   margin: 0;
 }
@@ -201,9 +205,9 @@ header {
   padding: 0 8% 0 0;
 }
 
-.community-container {
+.community__content {
   padding: 0 0 0 8vw;
-  margin: 0;
+  margin: 0 0 3rem 0;
 }
 
 .community--img {
@@ -223,19 +227,19 @@ header {
   width: auto;
 }
 
-.f-nav--footer__list-item {
+.f-nav__list-item {
   display: inline-block;
   padding: 1rem 0;
   margin: 0 0 0 1rem;
 }
 
-.top-but {
+.button--top {
   border: none;
   background-color: none;
   font-size: 15px;
   outline: none;
 }
-.top-but:hover {
+.button--top:hover {
   cursor: pointer;
 }
 
@@ -252,6 +256,13 @@ header {
 
   p {
     font-size: 16px;
+  }
+
+  .dashboard {
+    grid-template-columns: 50% 50%;
+  }
+  .community {
+    grid-template-columns: 50% 50%;
   }
 }
 
@@ -270,13 +281,13 @@ header {
     font-size: 16px;
   }
 
-  .green-but {
+  .button--green {
     width: 17rem;
     height: 2rem;
     font-size: 15px;
   }
 
-  .photo-1 {
+  .billboard__photo {
     width: 40rem;
   }
 
@@ -298,11 +309,11 @@ header {
   }
 
   /*header*/
-  .header-logo {
+  .header__logo {
     width: 7.5rem;
   }
 
-  .login-button {
+  .header__sign-in {
     width: 7.2rem;
   }
 
@@ -313,17 +324,17 @@ header {
     text-align: center;
   }
 
-  .billboard-container {
+  .billboard__content {
     padding: 1rem 8vw 3.5rem 8vw;
   }
 
-  .green-but {
+  .button--green {
     width: 18rem;
     height: 3rem;
     font-size: 18px;
   }
 
-  .photo-1 {
+  .billboard__photo {
     width: 100vw;
     min-width: 30rem;
   }
@@ -342,13 +353,13 @@ header {
     align-items: flex-end;
   }
 
-  .dashboard-container {
+  .dashboard__content {
     padding: 2rem 8vw 0 8vw;
     margin: 0;
   }
   .dashboard--img {
     width: 80vw;
-    margin: 3rem 0;
+    margin: 4.5rem 0 3rem 0;
     float: right;
   }
 
@@ -357,15 +368,17 @@ header {
     flex-direction: column;
     text-align: center;
     padding: 0;
+    margin-bottom: 5rem;
   }
 
-  .fornecedores-container {
+  .fornecedores__content {
     padding: 0rem 8% 0 8%;
     margin: 0;
   }
 
   .fornecedores--img {
     width: 80vw;
+    margin-bottom: 0;
   }
 
   .community {
@@ -375,7 +388,7 @@ header {
     padding: 0;
   }
 
-  .community-container {
+  .community__content {
     padding: 0 8vw;
     margin: 0;
   }
@@ -390,10 +403,10 @@ header {
     display: block;
     align-items: center;
     text-align: center;
-    padding: 1rem 8vw;
+    padding: 1.5rem 8vw;
   }
 
-  .f-nav--footer__list-item {
+  .f-nav__list-item {
     display: inline-block;
     padding: 1rem 0;
     margin: 0 0 0 1rem;
