@@ -287,6 +287,11 @@ header {
     font-size: 15px;
   }
 
+  .button--blue {
+    font-size: 15px;
+    padding: .8em 2.4rem;
+  }
+
   .billboard__photo {
     width: 40rem;
   }
