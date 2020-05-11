@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  margin-bottom: 1rem;
+}
+
 h1 {
   font-size: 48px;
   line-height: 1.5em;
@@ -247,6 +251,11 @@ header {
   width: 2rem;
 }
 
+.companies {
+  width: 10rem;
+  margin: 0 .5rem;
+}
+
 /* Mid-desktop */
 @media screen and (max-width: 1300px) {
 
@@ -404,7 +413,7 @@ header {
   .community--img {
     width: 100vw;
     max-width: 35rem;
-    margin: 3rem 0 3rem 0;
+    margin: 3rem 0 .5rem 0;
   }
 
   .footer__container {
@@ -426,4 +435,9 @@ header {
     padding: 0;
   }
   
+  .companies {
+    width: 6rem;
+    margin: 0 0rem;
+  }
+
 }
